@@ -30,24 +30,6 @@
 
 using namespace lldb;
 
-//----------------------------------------------------------------------
-// This quick sample code shows how to create a debugger instance and
-// create an executable target without adding dependent shared
-// libraries. It will then set a regular expression breakpoint to get
-// breakpoint locations for all functions in the module, and use the 
-// locations to extract the symbol context for each location. Then it 
-// dumps all // information about the function: its name, file address 
-// range, the return type (if any), and all argument types.
-//
-// To build the program, type (while in this directory):
-//
-//    $ make
-//
-// then to run this on MacOSX, specify the path to your LLDB.framework
-// library using the DYLD_FRAMEWORK_PATH option and run the executable
-//
-//    $ DYLD_FRAMEWORK_PATH=/Volumes/data/lldb/tot/build/Debug ./a.out executable_path1 [executable_path2 ...] 
-//----------------------------------------------------------------------
 class LLDBSentry
 {
 public:
